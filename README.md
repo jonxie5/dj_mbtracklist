@@ -1,8 +1,8 @@
 ## dj_mbtracklist
 
-Seems we're all on a similar quest, by some intersections of space, time, music, etc. - hehe
+Seems we're all on a similar quest, by some intersections of space, time, music, etc. - Or maybe just me, hehe..
 
-- dj_mbtracklist - is my final portfolio project for the nucamp devops/python/backend online bookcamp certificate I'd begun persuing winter'22..
+- dj_mbtracklist - is my final portfolio project for the nucamp devops/python/backend online bookcamp certificate I'd begun persuing winter'22.
 
 and is yet another simple music playlist manager clone in Python/Django, or in this case I would rather call it a "tracklists keeper" app with tracks seeded from MusicBrainz DB, so hence the "mbtrack" part of the project name.
 
