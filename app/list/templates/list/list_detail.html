@@ -1,0 +1,15 @@
+{% extends "mbtrack/base.html" %} {% load static %} {% load filters %} {% block title %} List
+{% endblock%} {% block content%}
+<div class="container">
+  <h4>{{ list.name }}</h4>
+  | {{ list.owner }} | created: {{ list.created_at }} | updated: {{ list.updated_at }}
+  <ul>
+      <li>TRACKS:</li>
+      <ul>
+      {% for track in list.tracks.all %}
+      <li><b><u>{{ track.name }}</u></b> | {{ track.length|duration_format }} | {{ track.artist }}</li>
+      {% endfor %}
+    </ul>
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}

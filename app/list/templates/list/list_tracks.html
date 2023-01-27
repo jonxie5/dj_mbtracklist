@@ -1,0 +1,12 @@
+{% extends "mbtrack/base.html" %} {% load static %} {% load filters %} {% block title %} Tracks
+{% endblock%} {% block content%}
+<div class="container">
+  {{ list.name }}
+  <h3>Tracks</h3>
+    <ul>
+    {% for track in list.tracks.all %}
+    <li><b>{{ track.name }}</b> | <i>{{ track.artist }}</i> | <b>{{ track.length|duration_format }}</b> | { {{ track.track_mbid }}, {{ track.recording_mbid }} }</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}

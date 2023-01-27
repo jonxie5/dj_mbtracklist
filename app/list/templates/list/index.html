@@ -1,0 +1,11 @@
+{% extends "mbtrack/base.html" %} {% load static %}{% block title %} Lists
+{% endblock%} {% block content%}
+<div class="container">
+  <h2>Lists</h2>
+  <ul>
+    {% for list in lists %}
+    <li><b>{{ list.name }}</b> by <i>{{ list.owner }}</i> created {{ list.created_at }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}
